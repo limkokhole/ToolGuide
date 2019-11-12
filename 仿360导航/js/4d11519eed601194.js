@@ -1,0 +1,1 @@
+(function(){var e=["hao360","feed_slo","iguessv8_slo","weather_slo","cguessv4_slo"];e.forEach(function(e){(new CacheSVC(e)).clear()})})();

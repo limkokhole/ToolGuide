@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>怡红公子网址导航</title>
+<link rel="stylesheet prefetch" href="http://fonts.useso.com/css?family=Raleway:300">
+<link rel="stylesheet" type="text/css" href="3.css" media="screen" />
+<style>
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+
+button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+/*
+  As a bonus, I will now begin including a shoddily written limerick or other high literary masterpiece in all my pens. Misspelled visual rhymes and two left feet are the spice of life. You're welcome.
+
+  [1/?] Glass cannon 
+  There was a young dev on the frontend
+  delighted to see folks affronted
+    They claimed satisfaction
+    provoking a reaction
+  but threw quite a fit when confronted
+*/
+</style>
+<style type="text/css">
+
+*{margin:0;padding:0;}
+
+.slideshow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  -webkit-animation-name: kenburns;
+          animation-name: kenburns;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.slideshow-image:nth-child(1) {
+  -webkit-animation-name: kenburns-1;
+          animation-name: kenburns-1;
+  z-index: 3;
+}
+.slideshow-image:nth-child(2) {
+  -webkit-animation-name: kenburns-2;
+          animation-name: kenburns-2;
+  z-index: 2;
+}
+.slideshow-image:nth-child(3) {
+  -webkit-animation-name: kenburns-3;
+          animation-name: kenburns-3;
+  z-index: 1;
+}
+.slideshow-image:nth-child(4) {
+  -webkit-animation-name: kenburns-4;
+          animation-name: kenburns-4;
+  z-index: 0;
+}
+
+@-webkit-keyframes kenburns-1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  1.5625% {
+    opacity: 1;
+  }
+  23.4375% {
+    opacity: 1;
+  }
+  26.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  98.4375% {
+    opacity: 0;
+    -webkit-transform: scale(1.21176);
+            transform: scale(1.21176);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes kenburns-1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  1.5625% {
+    opacity: 1;
+  }
+  23.4375% {
+    opacity: 1;
+  }
+  26.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  98.4375% {
+    opacity: 0;
+    -webkit-transform: scale(1.21176);
+            transform: scale(1.21176);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes kenburns-2 {
+  23.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  26.5625% {
+    opacity: 1;
+  }
+  48.4375% {
+    opacity: 1;
+  }
+  51.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes kenburns-2 {
+  23.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  26.5625% {
+    opacity: 1;
+  }
+  48.4375% {
+    opacity: 1;
+  }
+  51.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@-webkit-keyframes kenburns-3 {
+  48.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  51.5625% {
+    opacity: 1;
+  }
+  73.4375% {
+    opacity: 1;
+  }
+  76.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes kenburns-3 {
+  48.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  51.5625% {
+    opacity: 1;
+  }
+  73.4375% {
+    opacity: 1;
+  }
+  76.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@-webkit-keyframes kenburns-4 {
+  73.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  76.5625% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes kenburns-4 {
+  73.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  76.5625% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  z-index: 99;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+h1 small {
+  display: block;
+  font-size: .7em;
+}
+h1 small:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: .5em;
+}
+h1 small:last-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  padding-top: .5em;
+}
+</style>
+
+</head>
+<body>
+<h1><small>怡红公子</small>GreenBoy专用网址导航<small>
+<div class="buttons">
+
+<button   class="fill" ><a href="http://www.cnblogs.com/hmswt/p/7652589.html"  style="color:#a972cb;text-decoration:none;" >博客园</a></button>
+  <button  class="pulse" ><a href="http://www.moulem.com/"  style="color:#ef6eae;text-decoration:none;" >某柠檬</a></button>
+  <button  class="close"><a href="http://dh.workersky.cn/index.html"  style="color:#ff7f82;text-decoration:none;" >沃客导航</a></button>
+  <button  class="raise"><a href="http://www.w3school.com.cn/index.html"  style="color:#ffa260;text-decoration:none;" >w3school</a></button>
+  <button class="slide"><a href="https://mp.weixin.qq.com/"  style="color:#8fc866;text-decoration:none;" >微信公众平台</a></button>
+  <button class="up"><a href="http://www.imooc.com/"  style="color:#e4cb58;text-decoration:none;" >慕课网</a></button>
+
+
+</small></h1></div>
+<div class="slideshow">
+	<div class="slideshow-image" style="background-image: url('img/1.jpg')"></div>
+	<div class="slideshow-image" style="background-image: url('img/2.jpg')"></div>
+	<div class="slideshow-image" style="background-image: url('img/3.jpg')"></div>
+	<div class="slideshow-image" style="background-image: url('img/4.jpg')"></div>
+</div>
+<audio autoplay="autoplay">
+<source src="https://ximeng-1254134006.cos.ap-beijing.myqcloud.com/1.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
+

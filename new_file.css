@@ -1,0 +1,12 @@
+ul{
+	border-bottom: #000000 0.0625rem solid;
+}
+li{
+	float: left;
+	list-style-type: none;
+	margin: 0.625rem;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}

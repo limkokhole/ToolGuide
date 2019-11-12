@@ -1,0 +1,1 @@
+M("#corner-flash",function(e,t){var n=e(".mask"),r=QW.W("body"),i=QW.W("#doc-inner").getSize().width,s=function(){var e=r.getSize().width||0;e>i+210?t.show():t.hide()};QW.W(window).on("resize",s),s()});
