@@ -2,28 +2,7 @@ body {
 	font: 12px/1.5 Microsoft yahei, \5b8b\4f53, georgia, verdana, helvetica, sans-serif
 }
 
-body,
-ul,
-ol,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td {
+ *{
 	margin: 0;
 	padding: 0
 }
@@ -405,9 +384,7 @@ html {
 	width: 998px
 }
 
-#search-btn {
-	background-image: url(https://p0.ssl.qhimg.com/t01f512ea49aee5be1e.png)
-}
+
 
 #honghong.g-box,
 #lifestyle.g-box {
@@ -1047,7 +1024,7 @@ html {
 }
 
 #search-btn {
-	background-color: #e1e1e1;
+	background-image: url(https://p0.ssl.qhimg.com/t01f512ea49aee5be1e.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	border: 0;
@@ -1068,12 +1045,12 @@ html {
 	line-height: 35px
 }
 
-#lifestyle input,
+/* #lifestyle input,
 #lifestyle select,
 #lifestyle span {
 	display: inline-block;
 	font-size: 12px
-}
+} */
 
 #search-input input {
 	-webkit-appearance: none;
@@ -1089,7 +1066,7 @@ html {
 	width: 458px
 }
 
-#lifestyle .lifestyle-hd,
+/* #lifestyle .lifestyle-hd,
 #lifestyle .lifestyle-bd {
 	margin: 0 auto;
 	width: 208px
@@ -1102,7 +1079,7 @@ html {
 
 #lifestyle .lifestyle-bd {
 	padding-left: 6px
-}
+} */
 
 #header-frame .item-logo {
 	float: left;
@@ -1133,7 +1110,7 @@ html {
 	display: none
 }
 
-#lifestyle .lifestyle-hd .title {
+/* #lifestyle .lifestyle-hd .title {
 	color: #323232;
 	float: left;
 	font-size: 12px;
@@ -1141,7 +1118,7 @@ html {
 	height: 30px;
 	line-height: 30px;
 	overflow: hidden
-}
+} 
 
 #lifestyle .lifestyle-hd .tab {
 	float: right;
@@ -1166,8 +1143,8 @@ html {
 	height: 22px;
 	padding: 0 2%
 }
-
-#search .form-group .shadowtop {
+*/
+/* #search .form-group .shadowtop {
 	border-top: 1px solid #dedede;
 	border-bottom: 1px solid #f4f4f4;
 	height: 0;
@@ -1177,9 +1154,9 @@ html {
 	top: 0;
 	width: 99.8%;
 	z-index: 1
-}
+} */
 
-#search .form-group .shadowleft {
+/* #search .form-group .shadowleft {
 	border-left: 1px solid #dedede;
 	border-right: 1px solid #f4f4f4;
 	height: 30px;
@@ -1188,9 +1165,9 @@ html {
 	position: absolute;
 	top: 0;
 	width: 0
-}
+} */
 
-#lifestyle .lifestyle-hd .tab li {
+/* #lifestyle .lifestyle-hd .tab li {
 	border-right: 1px solid #868686;
 	display: inline;
 	float: left;
@@ -1214,3 +1191,4 @@ html {
 	color: #e60012;
 	text-decoration: none
 }
+ */

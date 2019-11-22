@@ -1,12 +1,85 @@
-ul{
+
+#search {
+	height: 42px;
+	margin: 5px 0 0;
+	width: 750px;
+	left: 305px;
+	position: absolute;
+	top: 25px;
+	border-width: 0rem;
+}
+legend {
+	display: none;
+}
+fieldset {
+	border: none;
+}
+#search-input {
+	background: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #9c9c9c;
+	-moz-box-shadow: inset 1px 1px 1px #dedede;
+	-webkit-box-shadow: inset 1px 1px 1px #dedede;
+	box-shadow: inset 1px 1px 1px #dedede;
+	display: inline;
+	float: left;
+	height: 30px;
+	margin: 0 5px 0 8px;
+	width: 504px
+}
+
+#search-input input {
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	font-size: 16px;
+	font-family: arial;
+	line-height: 22px;
+	margin-top: 5px;
+	outline: 0;
+	padding: 0 6px;
+	width: 458px
+}
+
+#search-btn {
+	background-image: url(https://p0.ssl.qhimg.com/t01f512ea49aee5be1e.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	border: 0;
+	cursor: pointer;
+	float: left;
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+	text-align: center;
+	width: 82px
+}
+
+#header-frame .item-logo {
+	float: left;
+	left: 95px;
+	position: absolute;
+	top: 18px;
+	width: 200px
+}
+
+ul {
+	overflow: hidden;
+}
+
+p {
 	border-bottom: #000000 0.0625rem solid;
 }
-li{
+
+li {
 	float: left;
 	list-style-type: none;
 	margin: 0.625rem;
 }
-a{
+
+a {
 	text-decoration: none;
 	color: #000000;
 }
