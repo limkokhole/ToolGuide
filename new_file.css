@@ -1,19 +1,21 @@
-
 #search {
 	height: 42px;
 	margin: 5px 0 0;
-	width: 750px;
+	width: 50rem;
 	left: 305px;
 	position: absolute;
 	top: 25px;
 	border-width: 0rem;
 }
+
 legend {
 	display: none;
 }
+
 fieldset {
 	border: none;
 }
+
 #search-input {
 	background: #fff;
 	border-width: 1px;
@@ -42,7 +44,7 @@ fieldset {
 	width: 458px
 }
 
-#search-btn {
+.search-btn {
 	background-image: url(https://p0.ssl.qhimg.com/t01f512ea49aee5be1e.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -57,13 +59,6 @@ fieldset {
 	width: 82px
 }
 
-#header-frame .item-logo {
-	float: left;
-	left: 95px;
-	position: absolute;
-	top: 18px;
-	width: 200px
-}
 
 ul {
 	overflow: hidden;

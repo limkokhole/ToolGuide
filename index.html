@@ -4,6 +4,23 @@
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width initial-scale=1'>
 		<title>网址导航</title>
+		<script src="jQuery2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#sougou").click(function() {
+					var fo = $('form');
+					fo.attr('action', 'https://www.sogou.com/web');
+					$("#search-kw").attr('name','query');
+					fo.submit();
+				});
+				$("#360").click(function(){
+					$("form").attr('action', 'https://www.so.com/s');
+					$("#search-kw").attr('name','q');
+					$("form").submit();
+				})
+			});
+			
+		</script>
 		<link rel="stylesheet" type="text/css" href="new_file.css" />
 	</head>
 	<body>
@@ -16,7 +33,9 @@
 					<div id="search-input">
 						<input type="text" name="wd" autocomplete="off" id="search-kw" value="">
 					</div>
-					<button id="search-btn" type="submit" class="">百度一下</button>
+					<button id="baidu" type="submit" class="search-btn">百度一下</button>
+					<button id="sougou" type="button" class="search-btn">搜狗搜索</button>
+					<button id="360" type="button" class="search-btn">360搜索</button>
 				</fieldset>
 			</form>
 		</div>
@@ -29,29 +48,29 @@
 
 		<p>资讯论坛</p>
 		<ul>
-			<li> <a href='https://www.ithome.com/' target='_blank'>IT之家</a></li>
-			<li> <a href='https://36kr.com/' target='_blank'>36氪</a></li>
-			<li> <a href='http://www.techweb.com.cn/' target='_blank'>TechWeb</a></li>
-			<li> <a href='https://www.v2ex.com/' target='_blank'>v2ex</a></li>
-			<li> <a href='https://www.52pojie.cn/' target='_blank'>吾爱破解</a></li>
-			<li> <a href='https://www.feng.com/' target='_blank'>威锋网</a></li>
-			<li> <a href='http://www.geekpark.net/' target='_blank'>极客公园</a></li>
-			<li> <a href='https://www.lieyunwang.com/' target='_blank'>猎云网</a></li>
-			<li> <a href='http://www.lanjingtmt.com/news' target='_blank'>蓝鲸TMT</a></li>
-			<li> <a href='https://www.repaik.com/' target='_blank'>睿派克</a></li>
-			<li> <a href='http://bbs.suda123.com/default.html' target='_blank'>速达社区</a></li>
-			<li> <a href='https://tech.ifeng.com/' target='_blank'>凤凰网科技</a></li>
-			<li> <a href='https://tech.163.com/' target='_blank'>网易科技</a></li>
-			<li> <a href='https://tech.sina.com.cn/' target='_blank'>新浪科技</a></li>
-			<li><a href='http://bbs.cskin.net/' target='_blank'>CSkin论坛 </a> C#</li>
-			<li><a href='http://www.ampc8.com/' target='_blank'>AM电脑吧 </a></li>
+			<li> <a href='https://www.ithome.com/'>IT之家</a></li>
+			<li> <a href='https://36kr.com/'>36氪</a></li>
+			<li> <a href='http://www.techweb.com.cn/'>TechWeb</a></li>
+			<li> <a href='https://www.v2ex.com/'>v2ex</a></li>
+			<li> <a href='https://www.52pojie.cn/'>吾爱破解</a></li>
+			<li> <a href='https://www.feng.com/'>威锋网</a></li>
+			<li> <a href='http://www.geekpark.net/'>极客公园</a></li>
+			<li> <a href='https://www.lieyunwang.com/'>猎云网</a></li>
+			<li> <a href='http://www.lanjingtmt.com/news'>蓝鲸TMT</a></li>
+			<li> <a href='https://www.repaik.com/'>睿派克</a></li>
+			<li> <a href='http://bbs.suda123.com/default.html'>速达社区</a></li>
+			<li> <a href='https://tech.ifeng.com/'>凤凰网科技</a></li>
+			<li> <a href='https://tech.163.com/'>网易科技</a></li>
+			<li> <a href='https://tech.sina.com.cn/'>新浪科技</a></li>
+			<li><a href='http://bbs.cskin.net/'>CSkin论坛 </a> C#</li>
+			<li><a href='http://www.ampc8.com/'>AM电脑吧 </a></li>
 			<li><a href="https://www.itsk.com/">IT天空</a></li>
 		</ul>
 
 
 		<p>小工具</p>
 		<ul>
-			<li>Resource Hacker <a href='http://www.angusj.com/resourcehacker/' target='_blank'>http://www.angusj.com/resourcehacker/</a></li>
+			<li>Resource Hacker <a href='http://www.angusj.com/resourcehacker/'>http://www.angusj.com/resourcehacker/</a></li>
 			<li><a href='https://enterprise.glyptodon.com/'>亚马逊云端桌面</a></li>
 			<li><a href='http://www.nicetool.net/'>nicetool工具</a> </li>
 			<li><a href='https://www.xiaocongjisuan.com/'>小葱计算</a></li>
@@ -62,28 +81,28 @@
 
 		<p>牛逼的小站</p>
 		<ul>
-			<li>当然我在扯淡 <a href='http://www.yinwang.org/#' target='_blank'>http://www.yinwang.org/#</a>王垠</li>
-			<li>王超博客 <a href='http://www.wangchao.info/' target='_blank'>http://www.wangchao.info/</a></li>
-			<li>tlanyan <a href='https://www.tlanyan.me/' target='_blank'>https://www.tlanyan.me/</a></li>
-			<li>飞哥专栏 <a href='https://www.ffeeii.com/' target='_blank'>https://www.ffeeii.com/</a></li>
-			<li>胡萝卜周 <a href='http://www.carrotchou.blog/' target='_blank'>http://www.carrotchou.blog/</a></li>
-			<li>JayXon <a href='https://www.jayxon.com/' target='_blank'>https://www.jayxon.com/</a>发布了JXar，用来打包、解包迅雷自定义格式的xar文件
+			<li>当然我在扯淡 <a href='http://www.yinwang.org/#'>http://www.yinwang.org/#</a>王垠</li>
+			<li>王超博客 <a href='http://www.wangchao.info/'>http://www.wangchao.info/</a></li>
+			<li>tlanyan <a href='https://www.tlanyan.me/'>https://www.tlanyan.me/</a></li>
+			<li>飞哥专栏 <a href='https://www.ffeeii.com/'>https://www.ffeeii.com/</a></li>
+			<li>胡萝卜周 <a href='http://www.carrotchou.blog/'>http://www.carrotchou.blog/</a></li>
+			<li>JayXon <a href='https://www.jayxon.com/'>https://www.jayxon.com/</a>发布了JXar，用来打包、解包迅雷自定义格式的xar文件
 				蓝奏云</li>
-			<li>三千院雨 <a href='http://764350177.lofter.com/' target='_blank'>http://764350177.lofter.com/</a>有一些原创破解小软件</li>
-			<li>张铁蕾 <a href='http://zhangtielei.com/' target='_blank'>http://zhangtielei.com/</a></li>
-			<li>孟坤博客 <a href='https://mkblog.cn/' target='_blank'>https://mkblog.cn/</a></li>
-			<li>老D博客 <a href='https://laod.cn/' target='_blank'>https://laod.cn/</a></li>
-			<li>憧憬点滴记忆 <a href='https://www.licoy.cn/' target='_blank'>https://www.licoy.cn/</a></li>
-			<li>果核剥壳 <a href='https://www.ghpym.com/' target='_blank'>https://www.ghpym.com/</a></li>
-			<li><a href='http://keir.net/'>Keir.net</a> 哈希文校验工具等软件 <a href='http://keir.net/index.html' target='_blank'>http://keir.net/index.html</a></li>
-			<li>叶色 <a href='http://leaful.com/win7' target='_blank'>http://leaful.com/win7</a>主题生成器</li>
-			<li>阿星 当然我在瞎扯<a href='http://xj8c.cc/' target='_blank'>http://xj8c.cc/</a></li>
-			<li>软件预备站 <a href='http://gam.ys168.com/' target='_blank'>http://gam.ys168.com/</a>清风徐来 <a href='http://winshu.tk/http://winshu.iask.in/'
-				 target='_blank'>http://winshu.tk/http://winshu.iask.in/</a>（备用）</li>
-			<li>IT技术客 <a href='http://www.itjsk.com/' target='_blank'>http://www.itjsk.com/</a></li>
-			<li>耍下 <a href='https://shuax.com/' target='_blank'>https://shuax.com/</a></li>
-			<li>无作为 <a href='https://www.wuzuowei.net/' target='_blank'>https://www.wuzuowei.net/</a></li>
-			<li>简易工作室|专注AutoIT(Au3) <a href='http://www.jianyiit.com/' target='_blank'>http://www.jianyiit.com/</a></li>
+			<li> <a href='http://764350177.lofter.com/'>三千院雨</a>有一些原创破解小软件</li>
+			<li><a href="http://askrain.lofter.com/">问雨</a></li>
+			<li>张铁蕾 <a href='http://zhangtielei.com/'>http://zhangtielei.com/</a></li>
+			<li>孟坤博客 <a href='https://mkblog.cn/'>https://mkblog.cn/</a></li>
+			<li>老D博客 <a href='https://laod.cn/'>https://laod.cn/</a></li>
+			<li>憧憬点滴记忆 <a href='https://www.licoy.cn/'>https://www.licoy.cn/</a></li>
+			<li>果核剥壳 <a href='https://www.ghpym.com/'>https://www.ghpym.com/</a></li>
+			<li><a href='http://keir.net/'>Keir.net</a> 哈希文校验工具等软件 <a href='http://keir.net/index.html'>http://keir.net/index.html</a></li>
+			<li>叶色 <a href='http://leaful.com/win7'>http://leaful.com/win7</a>主题生成器</li>
+			<li>阿星 当然我在瞎扯<a href='http://xj8c.cc/'>http://xj8c.cc/</a></li>
+			<li>软件预备站 <a href='http://gam.ys168.com/'>http://gam.ys168.com/</a>清风徐来 <a href='http://winshu.tk/http://winshu.iask.in/'>http://winshu.tk/http://winshu.iask.in/</a>（备用）</li>
+			<li>IT技术客 <a href='http://www.itjsk.com/'>http://www.itjsk.com/</a></li>
+			<li>耍下 <a href='https://shuax.com/'>https://shuax.com/</a></li>
+			<li>无作为 <a href='https://www.wuzuowei.net/'>https://www.wuzuowei.net/</a></li>
+			<li>简易工作室|专注AutoIT(Au3) <a href='http://www.jianyiit.com/'>http://www.jianyiit.com/</a></li>
 
 		</ul>
 
@@ -94,8 +113,8 @@
 				<p>代码托管</p>
 				<ul>
 					<li><a href="https://github.com/">GitHub</a></li>
-					<li> <a href='https://gitee.com/' target='_blank'>码云</a></li>
-					<li> <a href='https://sourceforge.net/' target='_blank'>sourceforge</a></li>
+					<li> <a href='https://gitee.com/'>码云</a></li>
+					<li> <a href='https://sourceforge.net/'>sourceforge</a></li>
 
 				</ul>
 			</li>
@@ -112,22 +131,22 @@
 						<p>PowerDesigner</p>
 					</li>
 					<li>
-						<p>balena <a href='https://www.balena.io/' target='_blank'>https://www.balena.io/</a></p>
+						<p>balena <a href='https://www.balena.io/'>https://www.balena.io/</a></p>
 					</li>
 					<li>
 						<p>animate css样式</p>
 					</li>
 					<li>
-						<p>kindeditor <a href='http://kindeditor.net/demo.php' target='_blank'>http://kindeditor.net/demo.php</a></p>
+						<p>kindeditor <a href='http://kindeditor.net/demo.php'>http://kindeditor.net/demo.php</a></p>
 					</li>
 					<li>
-						<p>IT电子书下载 <a href='https://itbook.download/' target='_blank'>https://itbook.download/</a></p>
+						<p>IT电子书下载 <a href='https://itbook.download/'>https://itbook.download/</a></p>
 					</li>
 					<li>
 						<p>JetBrains激活</p>
 						<ul>
-							<li>成都没有派对 <a href='https://www.imsxm.com/' target='_blank'>https://www.imsxm.com/</a></li>
-							<li>IDEA注册码 <a href='http://idea.lanyus.com/' target='_blank'>http://idea.lanyus.com/</a></li>
+							<li>成都没有派对 <a href='https://www.imsxm.com/'>https://www.imsxm.com/</a></li>
+							<li>IDEA注册码 <a href='http://idea.lanyus.com/'>http://idea.lanyus.com/</a></li>
 
 						</ul>
 					</li>
@@ -140,19 +159,15 @@
 					<li><a href="https://www.w3school.com.cn/index.html">w3school</a></li>
 					<li><a href="https://www.imooc.com/">慕课网</a></li>
 					<li><a href="https://www.runoob.com/">菜鸟教程</a></li>
-					<li>
-						<p>tiicle <a href='https://tiicle.com/' target='_blank'>https://tiicle.com/</a></p>
-					</li>
-					<li>
-						<p>HelloGitHub <a href='https://hellogithub.com/' target='_blank'>https://hellogithub.com/</a></p>
-					</li>
+					<li><a href='https://tiicle.com/'>tiicle</a></li>
+					<li><a href='https://hellogithub.com/'>HelloGitHub</a></li>
 					<li>
 						<p>中文网</p>
 						<ul>
-							<li>PHPstudy <a href='https://www.xp.cn/' target='_blank'>https://www.xp.cn/</a></li>
-							<li>html中文网 <a href='https://www.html.cn/' target='_blank'>https://www.html.cn/</a></li>
-							<li>PHP中文网 <a href='https://www.php.cn/' target='_blank'>https://www.php.cn/</a></li>
-							<li>PyThon学习网 <a href='https://www.py.cn/' target='_blank'>https://www.py.cn/</a></li>
+							<li>PHPstudy <a href='https://www.xp.cn/'>https://www.xp.cn/</a></li>
+							<li>html中文网 <a href='https://www.html.cn/'>https://www.html.cn/</a></li>
+							<li>PHP中文网 <a href='https://www.php.cn/'>https://www.php.cn/</a></li>
+							<li>PyThon学习网 <a href='https://www.py.cn/'>https://www.py.cn/</a></li>
 
 						</ul>
 					</li>
@@ -162,50 +177,141 @@
 
 		</ul>
 
-
 		<p>影视资源</p>
 		<ul>
-			<li>趣惠集 <a href='http://v.quhuiji.com/' target='_blank'>http://v.quhuiji.com/</a></li>
-			<li>电影迷 <a href='http://www.7277tv.com/http://sz.mnjgk.cn/app/index.php?i=1&amp;c=entry&amp;eid=5' target='_blank'>http://www.7277tv.com/http://sz.mnjgk.cn/app/index.php?i=1&c=entry&eid=5</a></li>
-			<li>西瓜云 <a href='http://www.xiguayun.cc/' target='_blank'>http://www.xiguayun.cc/</a></li>
-			<li>思古</li>
-			<li>第一电影 <a href='https://www.d1dy.net/' target='_blank'>https://www.d1dy.net/</a></li>
-			<li><a href='http://www.xybl8.com/yvr/list'>新影不离</a></li>
+			<li>
+				<p>网盘</p>
+				<ul>
+					<li><a href="https://bdy.ppxzy.com/dy">皮皮虾资源</a></li>
+					<li><a href="http://www.mp4ba.cc/">高清MP4吧</a></li>
+					<li><a href="http://www.siyu88.cn/">思雨网</a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</li>
+			<li>
+				<p>在线看</p>
+				<ul>
+					<li><a href="http://www.yy6080.cn/">新视觉影院</a></li>
 
+					<li> <a href='http://v.quhuiji.com/'>趣惠集</a>
+						<a href='http://sz.mnjgk.cn/app/index.php?i=1&c=entry&do=index&m=hmyx_pc'>电影迷</a>
+					</li>
+					<li><a href="http://97id.net/">97影院</a></li>
+					<li> <a href='http://www.xiguayun.cc/'>西瓜云</a></li>
+					<li><a href="https://www.qire8.net/">奇热网</a></li>
+					<li><a href="https://www.90ttys.com/">90天堂影视</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>下载</p>
+				<ul>
+					<li><a href="https://www.piaohua.com/">飘花资源网</a></li>
+					<li><a href="https://www.dytt8.net/index3.htm">电影天堂</a></li>
+					<li><a href="http://www.btmeiju.com/">bt美剧</a></li>
+					<li><a href="http://www.zmz2019.com/">人人影视</a></li><!-- rrys.tv -->
+					<li><a href="https://www.poxiao.com/">破晓电影</a></li>
+					<li><a href="https://www.loldytt.tv/">电影天堂</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>在线看&下载</p>
+				<ul>
+					<li><a href="https://www.ziyy.cc/">战网影院</a><a href="https://www.bt5156.cc/"> 资源网</a></li>
+					<li><a href="http://www.dygang.com/">电影港</a>
+						<a href="https://www.66e.cc/"> 66影视</a>
+						<a href="http://www.6vhao.tv/">6v电影网</a>
+						<a href="http://www.hao6v.com/">6v电影网</a>
+					</li>
+					<li> <a href='https://www.d1dy.net/'>第一电影</a></li>
+					<li><a href="http://www.chapaofan.com/">泡饭影视</a></li>
+					<li><a href="http://www.8080s.net/">80s电影</a></li> <!-- www.80s.cm -->
+					<li><a href="http://www.qtfy7.com/">且听风吟</a></li>
+					<li><a href="https://www.meijutt.com/">美剧天堂</a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</li>
+			<li>
+				<p>影视导航</p>
+				<ul>
+					<li><a href="http://www.yingmi123.com/">影迷导航网</a></li>
+					<li><a href="http://www.allyingshi.com/">人人影视网址大全</a></li>
+					<li><a href="https://www.baidu.com/s?ie=UTF-8&wd=%E5%B0%8F%E6%A3%AE%E6%9E%97%E5%AF%BC%E8%88%AA">小森林导航</a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</li>
+			<li>
+				<p>论坛</p>
+				<ul>
+					<li><a href="https://www.1000fr.net/">美剧天堂</a></li>
+					<li><a href="http://bbs.sfile2012.com/index.php">伊甸园</a></li>
+					<li> <a href='https://www.8ziyuan.com/'>8资源分享</a></li>
+					<li><a href="https://www.gugeys.cc/">谷哥论坛</a></li>
+					<li><a href="https://bbs.popgo.org/bbs/">漫游</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>资源搜索</p>
+				<ul>
+					<li><a href="https://eztv.io/">eztv</a></li>
+					<li> <a href='http://bt.langyan.org/'>海盗湾</a></li>
+					<li><a href="https://www.ed2000.com/">ed2000</a></li>
+					<li><a href="http://www.somag.net/">磁力链接BT搜索</a></li>
+					<li><a href="https://bt.orzx.im/">CszeBT</a></li>
+					<li></li>
+				</ul>
+			</li>
+			<li>
+				<p>网盘搜索</p>
+				<ul>
+					<li> <a href='https://www.quzhuanpan.com/'>去转盘</a></li>
+					<li> <a href='https://xilinjie.cc/'>西林街</a></li>
+					<li><a href="https://www.wowenda.com/">云网盘之家</a></li>
+					<li><a href="http://www.rufengso.net/">如风搜</a></li>
+					<li><a href="https://www.panc.cc/">胖次搜索</a></li>
+					<li><a href="http://www.tebaidu.com/">特白度</a></li>
+					<li><a href="http://www.pansou.com/">盘搜</a></li>
+					<li><a href="http://www.daysou.com/">云搜</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>其他</p>
+				<ul>
+
+					<li><a href="http://bt.hliang.com/">黑亮综艺（港台日韩综艺）</a></li>
+					<li><a href="https://www.54new.com/">燕子bt</a></li>
+					<li><a href="http://www.opclass.com/">公开课纪录片下载网</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>等它们能用</p>
+				<ul>
+					<li><a href="http://sigu.me/">思古</a></li>
+					<li><a href='http://www.xybl8.com/yvr/list'>新影不离</a></li>
+				</ul>
+			</li>
 		</ul>
-
-
-		<p>资源搜索</p>
+		<p>游戏下载</p>
 		<ul>
-			<li>海盗湾 <a href='http://bt.langyan.org/' target='_blank'>http://bt.langyan.org/</a></li>
-			<li>8资源分享 <a href='https://www.8ziyuan.com/' target='_blank'>https://www.8ziyuan.com/</a></li>
-
+			<li> <a href='https://www.ali213.net/'>游侠网</a></li>
+			<li> <a href='https://www.3dmgame.com/'>3dm</a></li>
+			<li><a href="https://www.byhh.org/home">在线DOS怀旧游戏</a></li>
 		</ul>
 
 
-		<p>游戏</p>
-		<ul>
-			<li>游侠网 <a href='https://www.ali213.net/' target='_blank'>https://www.ali213.net/</a></li>
-			<li>3dm <a href='https://www.3dmgame.com/' target='_blank'>https://www.3dmgame.com/</a></li>
 
-		</ul>
+
 
 
 		<p>网盘</p>
 		<ul>
-			<li>
-				<p>网盘搜索</p>
-				<ul>
-					<li>去转盘 <a href='https://www.quzhuanpan.com/' target='_blank'>https://www.quzhuanpan.com/</a></li>
-					<li>西林街 <a href='https://xilinjie.cc/' target='_blank'>https://xilinjie.cc/</a></li>
 
-				</ul>
-			</li>
 			<li>
 				<p>百度网盘下载加速</p>
 				<ul>
-					<li>PanDownload <a href='https://www.baiduwp.com/' target='_blank'>https://www.baiduwp.com/</a></li>
-					<li>直链在线解析 <a href='https://www.baidusu.com/' target='_blank'>https://www.baidusu.com/</a></li>
+					<li>PanDownload <a href='https://www.baiduwp.com/'>https://www.baiduwp.com/</a></li>
+					<li>直链在线解析 <a href='https://www.baidusu.com/'>https://www.baidusu.com/</a></li>
 					<li>爱奇艺万能播放器</li>
 
 				</ul>
@@ -213,9 +319,9 @@
 			<li>
 				<p>临时网盘文件中转</p>
 				<ul>
-					<li>FireFox Send <a href='https://send.firefox.com/' target='_blank'>https://send.firefox.com/</a></li>
-					<li>奶牛快传 <a href='https://cowtransfer.com/' target='_blank'>https://cowtransfer.com/</a></li>
-					<li>WeTransfer <a href='https://wetransfer.com/' target='_blank'>https://wetransfer.com/</a></li>
+					<li>FireFox Send <a href='https://send.firefox.com/'>https://send.firefox.com/</a></li>
+					<li>奶牛快传 <a href='https://cowtransfer.com/'>https://cowtransfer.com/</a></li>
+					<li>WeTransfer <a href='https://wetransfer.com/'>https://wetransfer.com/</a></li>
 
 				</ul>
 			</li>
@@ -225,10 +331,9 @@
 
 		<p>文库</p>
 		<ul>
-			<li>冰点文库下载器<a href='http://www.bingdian001.com/' target='_blank'>http://www.bingdian001.com/</a> 网页版<a href='http://www.18wk.com/1234866.aspx'
-				 target='_blank'>http://www.18wk.com/1234866.aspx</a></li>
-			<li>VVV文档在线导出工具<a href='http://wenku.baiduvvv.com/doc/' target='_blank'>http://wenku.baiduvvv.com/doc/</a>更方便的方法，域名baidu后面加vvv</li>
-			<li>全国图书馆参考咨询联盟 <a href='http://www.ucdrs.superlib.net/' target='_blank'>http://www.ucdrs.superlib.net/</a></li>
+			<li>冰点文库下载器<a href='http://www.bingdian001.com/'>http://www.bingdian001.com/</a> 网页版<a href='http://www.18wk.com/1234866.aspx'>http://www.18wk.com/1234866.aspx</a></li>
+			<li>VVV文档在线导出工具<a href='http://wenku.baiduvvv.com/doc/'>http://wenku.baiduvvv.com/doc/</a>更方便的方法，域名baidu后面加vvv</li>
+			<li>全国图书馆参考咨询联盟 <a href='http://www.ucdrs.superlib.net/'>http://www.ucdrs.superlib.net/</a></li>
 			<li>PDF转换 abbyy12 百度网盘</li>
 
 		</ul>
@@ -237,11 +342,11 @@
 		<p>购物</p>
 		<ul>
 			<li>大淘客</li>
-			<li>万能命令 <a href='https://wn.run/cn/' target='_blank'>https://wn.run/cn/</a></li>
-			<li>商品历史价格 <a href='http://www.hisprice.cn/' target='_blank'>http://www.hisprice.cn/</a></li>
-			<li>价格历史－惠惠购物助手<a href='http://zhushou.huihui.cn/history.html' target='_blank'>http://zhushou.huihui.cn/history.html</a></li>
-			<li>过客网 <a href='http://www.tool168.cn/' target='_blank'>http://www.tool168.cn/</a></li>
-			<li>西贴 <a href='http://www.xitie.com/' target='_blank'>http://www.xitie.com/</a></li>
+			<li>万能命令 <a href='https://wn.run/cn/'>https://wn.run/cn/</a></li>
+			<li>商品历史价格 <a href='http://www.hisprice.cn/'>http://www.hisprice.cn/</a></li>
+			<li>价格历史－惠惠购物助手<a href='http://zhushou.huihui.cn/history.html'>http://zhushou.huihui.cn/history.html</a></li>
+			<li>过客网 <a href='http://www.tool168.cn/'>http://www.tool168.cn/</a></li>
+			<li>西贴 <a href='http://www.xitie.com/'>http://www.xitie.com/</a></li>
 
 		</ul>
 
@@ -251,16 +356,16 @@
 			<li>
 				<p>搜索</p>
 				<ul>
-					<li>超高无损音乐 <a href='https://www.sq688.com/' target='_blank'>https://www.sq688.com/</a></li>
-					<li> <a href='https://www.52flac.com/' target='_blank'>52flac</a></li>
+					<li>超高无损音乐 <a href='https://www.sq688.com/'>https://www.sq688.com/</a></li>
+					<li> <a href='https://www.52flac.com/'>52flac</a></li>
 
 				</ul>
 			</li>
 			<li>
-				<p>无损音乐验证助手LoselessAudioValidator <a href='https://www.fishlee.net/' target='_blank'>https://www.fishlee.net/</a></p>
+				<p>无损音乐验证助手LoselessAudioValidator <a href='https://www.fishlee.net/'>https://www.fishlee.net/</a></p>
 			</li>
 			<li>
-				<p>频谱 <a href='http://spek.cc/' target='_blank'>http://spek.cc/</a></p>
+				<p>频谱 <a href='http://spek.cc/'>http://spek.cc/</a></p>
 			</li>
 
 		</ul>
@@ -268,9 +373,9 @@
 
 		<p>制图</p>
 		<ul>
-			<li>稿定设计 <a href='https://www.gaoding.com/' target='_blank'>https://www.gaoding.com/</a></li>
+			<li>稿定设计 <a href='https://www.gaoding.com/'>https://www.gaoding.com/</a></li>
 			<li>图怪兽</li>
-			<li>觅元素 <a href='http://www.51yuansu.com/' target='_blank'>http://www.51yuansu.com/</a></li>
+			<li>觅元素 <a href='http://www.51yuansu.com/'>http://www.51yuansu.com/</a></li>
 
 		</ul>
 
@@ -286,13 +391,13 @@
 				</ul>
 			</li>
 			<li>
-				<p>删除不需要的元素 Inpaint <a href='http://www.teorex.com/' target='_blank'>http://www.teorex.com/</a></p>
+				<p>删除不需要的元素 Inpaint <a href='http://www.teorex.com/'>http://www.teorex.com/</a></p>
 			</li>
 			<li>
 				<p>录屏、截图</p>
 				<ul>
-					<li>FSCapture <a href='http://www.faststone.org/' target='_blank'>http://www.faststone.org/</a></li>
-					<li>gif录制GifCam <a href='http://www.bahraniapps.com/http://blog.bahraniapps.com/' target='_blank'>http://www.bahraniapps.com/http://blog.bahraniapps.com/</a></li>
+					<li>FSCapture <a href='http://www.faststone.org/'>http://www.faststone.org/</a></li>
+					<li>gif录制GifCam <a href='http://www.bahraniapps.com/http://blog.bahraniapps.com/'>http://www.bahraniapps.com/http://blog.bahraniapps.com/</a></li>
 
 				</ul>
 			</li>
@@ -303,7 +408,7 @@
 		<p>PE</p>
 		<ul>
 			<li>微PE</li>
-			<li>光卡<a href='https://hikaricalyx.com/' target='_blank'>https://hikaricalyx.com/</a></li>
+			<li>光卡<a href='https://hikaricalyx.com/'>https://hikaricalyx.com/</a></li>
 
 		</ul>
 
@@ -350,57 +455,57 @@
 					<li><a href="https://www.iplaysoft.com/">异次元软件世界</a></li>
 					<li><a href="http://www.xdowns.com/">绿软联盟</a></li>
 					<li><a href="https://www.appinn.com/">小众软件</a></li>
-					<li><a href='https://love.appinn.com/' target='_blank'>小众软件我最喜爱</a></li>
+					<li><a href='https://love.appinn.com/'>小众软件我最喜爱</a></li>
 					<li>
-						<p>8号站 <a href='http://www.ssdtop.com/' target='_blank'>http://www.ssdtop.com/</a></p>
+						<p>8号站 <a href='http://www.ssdtop.com/'>http://www.ssdtop.com/</a></p>
 					</li>
 					<li>
-						<p>大众脸 <a href='http://www.lookae.com/' target='_blank'>http://www.lookae.com/</a> adobe资源</p>
+						<p>大众脸 <a href='http://www.lookae.com/'>http://www.lookae.com/</a> adobe资源</p>
 					</li>
 					<li>
-						<p>mrack <a href='http://mrack.lofter.com/' target='_blank'>http://mrack.lofter.com/</a></p>
+						<p>mrack <a href='http://mrack.lofter.com/'>http://mrack.lofter.com/</a></p>
 					</li>
 					<li>
-						<p>未来软件园 <a href='http://www.orsoon.com/' target='_blank'>http://www.orsoon.com/</a></p>
+						<p>未来软件园 <a href='http://www.orsoon.com/'>http://www.orsoon.com/</a></p>
 					</li>
 					<li>
-						<p>轻狂志 <a href='https://www.flighty.cn/' target='_blank'>https://www.flighty.cn/</a></p>
+						<p>轻狂志 <a href='https://www.flighty.cn/'>https://www.flighty.cn/</a></p>
 					</li>
 					<li>
-						<p>行客工作室 <a href='http://www.runker.net/' target='_blank'>http://www.runker.net/</a></p>
+						<p>行客工作室 <a href='http://www.runker.net/'>http://www.runker.net/</a></p>
 					</li>
 					<li>
-						<p>独木成林 <a href='https://www.guofs.com/' target='_blank'>https://www.guofs.com/</a></p>
+						<p>独木成林 <a href='https://www.guofs.com/'>https://www.guofs.com/</a></p>
 					</li>
 					<li>
-						<p>源码爱好者 <a href='http://www.codefans.net/' target='_blank'>http://www.codefans.net/</a></p>
+						<p>源码爱好者 <a href='http://www.codefans.net/'>http://www.codefans.net/</a></p>
 					</li>
 					<li>
-						<p>绿软分享吧 <a href='http://www.lrshare.com/' target='_blank'>http://www.lrshare.com/</a></p>
+						<p>绿软分享吧 <a href='http://www.lrshare.com/'>http://www.lrshare.com/</a></p>
 					</li>
 					<li>
-						<p>无所不藏 <a href='https://www.nocang.com/' target='_blank'>https://www.nocang.com/</a></p>
+						<p>无所不藏 <a href='https://www.nocang.com/'>https://www.nocang.com/</a></p>
 					</li>
 					<li>
-						<p>精品绿色便携软件 <a href='https://www.portablesoft.org/' target='_blank'>https://www.portablesoft.org/</a></p>
+						<p>精品绿色便携软件 <a href='https://www.portablesoft.org/'>https://www.portablesoft.org/</a></p>
 					</li>
 					<li>
 						<p>Blackmart 手机应用商店</p>
 					</li>
 					<li>
-						<p>谷歌版应用apk <a href='https://apkpure.com/cn/' target='_blank'>https://apkpure.com/cn/</a></p>
+						<p>谷歌版应用apk <a href='https://apkpure.com/cn/'>https://apkpure.com/cn/</a></p>
 					</li>
 					<li>
-						<p>心海e站 <a href='https://hrtsea.com/' target='_blank'>https://hrtsea.com/</a></p>
+						<p>心海e站 <a href='https://hrtsea.com/'>https://hrtsea.com/</a></p>
 					</li>
 					<li>
-						<p>appx直链获取 <a href='https://store.rg-adguard.net/' target='_blank'>https://store.rg-adguard.net/</a></p>
+						<p>appx直链获取 <a href='https://store.rg-adguard.net/'>https://store.rg-adguard.net/</a></p>
 					</li>
 					<li>
 						<p>软件商店</p>
 						<ul>
-							<li><a href='https://www.softonic.cn/' target='_blank'>https://www.softonic.cn/</a></li>
-							<li><a href='https://www.softpedia.com/' target='_blank'>https://www.softpedia.com/</a></li>
+							<li><a href='https://www.softonic.cn/'>https://www.softonic.cn/</a></li>
+							<li><a href='https://www.softpedia.com/'>https://www.softpedia.com/</a></li>
 
 						</ul>
 					</li>
@@ -408,10 +513,10 @@
 				</ul>
 			</li>
 			<li>
-				<p>软件卸载 geek <a href='https://geekuninstaller.com/' target='_blank'>https://geekuninstaller.com/</a></p>
+				<p>软件卸载 geek <a href='https://geekuninstaller.com/'>https://geekuninstaller.com/</a></p>
 			</li>
 			<li>
-				<p>软件升级 sumo <a href='https://www.kcsoftwares.com/?home' target='_blank'>https://www.kcsoftwares.com/?home</a></p>
+				<p>软件升级 sumo <a href='https://www.kcsoftwares.com/?home'>https://www.kcsoftwares.com/?home</a></p>
 			</li>
 
 		</ul>
@@ -420,7 +525,7 @@
 		<p>小工具</p>
 		<ul>
 			<li><a href=' https://spacedesk.net/ '>spacedesk</a> 将其他设备作为扩展屏</li>
-			<li>屏幕共享 DeskTopShare <a href='http://www.yinrg.net/' target='_blank'>http://www.yinrg.net/</a></li>
+			<li>屏幕共享 DeskTopShare <a href='http://www.yinrg.net/'>http://www.yinrg.net/</a></li>
 
 		</ul>
 
@@ -430,8 +535,8 @@
 			<li>
 				<p>镜像下载</p>
 				<ul>
-					<li>我告诉你 <a href='https://msdn.itellyou.cn/' target='_blank'>https://msdn.itellyou.cn/</a></li>
-					<li>小鱼儿系统 <a href='https://www.yrxitong.com/' target='_blank'>https://www.yrxitong.com/</a></li>
+					<li>我告诉你 <a href='https://msdn.itellyou.cn/'>https://msdn.itellyou.cn/</a></li>
+					<li>小鱼儿系统 <a href='https://www.yrxitong.com/'>https://www.yrxitong.com/</a></li>
 					<li>十二星座工作室</li>
 					<li>吻妻团队</li>
 
@@ -441,9 +546,9 @@
 				<p>刻录</p>
 				<ul>
 					<li>UltraISO9.7 蓝奏云 9.6百度云</li>
-					<li>etcher <a href='https://www.balena.io/etcher/' target='_blank'>https://www.balena.io/etcher/</a></li>
-					<li>Rufus <a href='https://rufus.ie/' target='_blank'>https://rufus.ie/</a></li>
-					<li>Win32 Disk Imager <a href='https://sourceforge.net/projects/win32diskimager/' target='_blank'>https://sourceforge.net/projects/win32diskimager/</a></li>
+					<li>etcher <a href='https://www.balena.io/etcher/'>https://www.balena.io/etcher/</a></li>
+					<li>Rufus <a href='https://rufus.ie/'>https://rufus.ie/</a></li>
+					<li>Win32 Disk Imager <a href='https://sourceforge.net/projects/win32diskimager/'>https://sourceforge.net/projects/win32diskimager/</a></li>
 
 				</ul>
 			</li>
@@ -465,10 +570,10 @@
 			<li>
 				<p>主题美化</p>
 				<ul>
-					<li>致美化 <a href='https://zhutix.com/' target='_blank'>https://zhutix.com/</a></li>
-					<li>upupoo <a href='http://www.upupoo.com/' target='_blank'>http://www.upupoo.com/</a></li>
+					<li>致美化 <a href='https://zhutix.com/'>https://zhutix.com/</a></li>
+					<li>upupoo <a href='http://www.upupoo.com/'>http://www.upupoo.com/</a></li>
 					<li>雨滴</li>
-					<li>主题破解 <a href='https://www.syssel.net/hoefs/index.php?lang=en' target='_blank'>https://www.syssel.net/hoefs/index.php?lang=en</a></li>
+					<li>主题破解 <a href='https://www.syssel.net/hoefs/index.php?lang=en'>https://www.syssel.net/hoefs/index.php?lang=en</a></li>
 
 				</ul>
 			</li>
@@ -488,7 +593,7 @@
 
 		<p>远程</p>
 		<ul>
-			<li>遥控 HiPC <a href='https://hipc.cn/' target='_blank'>https://hipc.cn/</a></li>
+			<li>遥控 HiPC <a href='https://hipc.cn/'>https://hipc.cn/</a></li>
 			<li>TeamViewer</li>
 
 		</ul>
@@ -497,36 +602,36 @@
 		<p>科学上网</p>
 		<ul>
 			<li>
-				<p><a href='https://github.com/dxxzst' target='_blank'>https://github.com/dxxzst</a></p>
+				<p><a href='https://github.com/dxxzst'>https://github.com/dxxzst</a></p>
 			</li>
 			<li>
-				<p>小飞机 蓝奏云 <a href='https://www.lanzous.com/i6r7o3c' target='_blank'>https://www.lanzous.com/i6r7o3c</a></p>
+				<p>小飞机 蓝奏云 <a href='https://www.lanzous.com/i6r7o3c'>https://www.lanzous.com/i6r7o3c</a></p>
 				<ul>
-					<li>ssr <a href='https://github.com/shadowsocksrr' target='_blank'>https://github.com/shadowsocksrr</a></li>
-					<li>ss <a href='https://github.com/shadowsocks' target='_blank'>https://github.com/shadowsocks</a></li>
-					<li>GitHub shadowsocksr专题<a href='https://github.com/topics/shadowsocksr' target='_blank'>https://github.com/topics/shadowsocksr</a></li>
+					<li>ssr <a href='https://github.com/shadowsocksrr'>https://github.com/shadowsocksrr</a></li>
+					<li>ss <a href='https://github.com/shadowsocks'>https://github.com/shadowsocks</a></li>
+					<li>GitHub shadowsocksr专题<a href='https://github.com/topics/shadowsocksr'>https://github.com/topics/shadowsocksr</a></li>
 
 				</ul>
 			</li>
 			<li>
-				<p>蓝灯 <a href='https://github.com/getlantern/download' target='_blank'>https://github.com/getlantern/download</a></p>
+				<p>蓝灯 <a href='https://github.com/getlantern/download'>https://github.com/getlantern/download</a></p>
 			</li>
 
 		</ul>
 
 
-		<p>字体版权查询 <a href='https://fonts.safe.360.cn/' target='_blank'>https://fonts.safe.360.cn/</a></p>
+		<p>字体版权查询 <a href='https://fonts.safe.360.cn/'>https://fonts.safe.360.cn/</a></p>
 
 
 		<p>网址导航</p>
 		<ul>
-			<li>某柠檬 <a href='https://www.moulem.com/' target='_blank'>https://www.moulem.com/</a></li>
-			<li>沃客导航 <a href='https://www.9178.work/' target='_blank'>https://www.9178.work/</a></li>
-			<li>龙轩导航 <a href='http://ilxdh.com/' target='_blank'>http://ilxdh.com/</a></li>
-			<li>AnywhereAnything <a href='http://lackar.com/aa/' target='_blank'>http://lackar.com/aa/</a></li>
-			<li>次元壁导航 <a href='http://my.ciyuan.bi/' target='_blank'>http://my.ciyuan.bi/</a></li>
-			<li>收库123 <a href='https://shouku123.com/https://shouku123.com/xizi' target='_blank'>https://shouku123.com/https://shouku123.com/xizi</a></li>
-			<li>看国外 <a href='https://www.kanguowai.com/' target='_blank'>https://www.kanguowai.com/</a></li>
+			<li>某柠檬 <a href='https://www.moulem.com/'>https://www.moulem.com/</a></li>
+			<li>沃客导航 <a href='https://www.9178.work/'>https://www.9178.work/</a></li>
+			<li>龙轩导航 <a href='http://ilxdh.com/'>http://ilxdh.com/</a></li>
+			<li>AnywhereAnything <a href='http://lackar.com/aa/'>http://lackar.com/aa/</a></li>
+			<li>次元壁导航 <a href='http://my.ciyuan.bi/'>http://my.ciyuan.bi/</a></li>
+			<li>收库123 <a href='https://shouku123.com/https://shouku123.com/xizi'>https://shouku123.com/https://shouku123.com/xizi</a></li>
+			<li>看国外 <a href='https://www.kanguowai.com/'>https://www.kanguowai.com/</a></li>
 
 		</ul>
 
@@ -540,7 +645,7 @@
 		</ul>
 
 
-		<p>魔方小站 <a href='http://www.rubik.com.cn/' target='_blank'>http://www.rubik.com.cn/</a></p>
+		<p>魔方小站 <a href='http://www.rubik.com.cn/'>http://www.rubik.com.cn/</a></p>
 
 
 	</body>
