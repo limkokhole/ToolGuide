@@ -1,4 +1,4 @@
-body {
+body,p {
 	margin: 0rem;
 }
 
@@ -21,7 +21,6 @@ body {
 	font-weight: bolder;
 	font-size: 2rem;
 }
-
 #list {
 	margin: 0rem;
 	padding: 0rem;
@@ -38,16 +37,8 @@ body {
 }
 
 #search div {
-	width: 500px;
+	width: 31.25rem;
 	margin: 0rem 0rem 0rem auto;
-}
-
-legend {
-	display: none;
-}
-
-fieldset {
-	border: none;
 }
 
 #search-input {
@@ -62,26 +53,25 @@ fieldset {
 #search-input input {
 	margin: 0.3125rem;
 	outline: 0rem;
-	border: 0px;
-	font-size: 16px;
+	border: 0rem;
+	font-size: 1rem;
 	font-family: arial;
-	line-height: 22px;
-	width: 480px
+	line-height: 1.375rem;
+	width: 30rem;
 }
 
 .search-btn {
 	margin: 1rem;
 	margin-left: 0rem;
 	cursor: pointer;
-	float: left;
-	line-height: 16px;
+	font-size: 0.75rem;
+	line-height: 1rem;
 	text-align: center;
 }
 
-body p {
+body>p {
 	margin: 0.3125rem;
 }
-
 ul {
 	overflow: hidden;
 }
