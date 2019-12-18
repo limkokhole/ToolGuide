@@ -4,9 +4,27 @@
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width initial-scale=1'>
 		<title>网址导航</title>
-		<script src="js/jQuery2.1.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jQuery2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function browserRedirect() {  
+					var sUserAgent = navigator.userAgent.toLowerCase();  
+					var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";  
+					var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
+					var bIsMidp = sUserAgent.match(/midp/i) == "midp";  
+					var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  
+					var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";  
+					var bIsAndroid = sUserAgent.match(/android/i) == "android";  
+					var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
+					var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+					if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) { 
+					document.write('<script type="text/javascript" charset="utf-8" src="js/mobile.js"><\/script>');
+					} else {  
+					document.write('<script type="text/javascript" charset="utf-8" src="js/index.js"><\/script>');
+					}  
+					}
+					browserRedirect();  
+		</script>
 	</head>
 	<body>
 		<div id="top">
@@ -17,7 +35,7 @@
 			<div id="search-input">
 				<input type="text" name="wd" autocomplete="off" id="search-kw">
 			</div>
-			<div>
+			<div id="btn">
 				<button type="button" id="baidu" class="search-btn">百度</button>
 				<button type="button" id="bing" class="search-btn">必应</button>
 				<button type="button" id="google" class="search-btn">谷歌</button>
@@ -31,9 +49,7 @@
 
 		<div id="menu">
 			<div id="list_logo">
-				<div id="san">
-					三
-				</div>
+					亖
 			</div>
 			<ul id="list">
 				<li><a href="#top">TOP</a></li>
@@ -63,6 +79,7 @@
 			<p>常用</p>
 			<li><a href="https://mp.weixin.qq.com/">微信公众平台</a></li>
 			<li><a href="https://www.cnblogs.com/">博客园</a></li>
+			<li><a href="http://www.lanzou.com/u">蓝奏云</a></li>
 		</ul>
 
 		<p id="zixunluntan">资讯论坛</p>
@@ -164,15 +181,16 @@
 					<li><a href="https://www.w3school.com.cn/index.html">w3school</a></li>
 					<li><a href="https://www.imooc.com/">慕课网</a></li>
 					<li><a href="https://www.runoob.com/">菜鸟教程</a></li>
+					<li><a href="https://www.51zxw.net/">我要自学网</a></li>
 					<li><a href='https://tiicle.com/'>tiicle</a></li>
 					<li><a href='https://hellogithub.com/'>HelloGitHub</a></li>
 					<li>
 						<p>中文网</p>
 						<ul>
-							<li>PHPstudy <a href='https://www.xp.cn/'>https://www.xp.cn/</a></li>
-							<li>html中文网 <a href='https://www.html.cn/'>https://www.html.cn/</a></li>
-							<li>PHP中文网 <a href='https://www.php.cn/'>https://www.php.cn/</a></li>
-							<li>PyThon学习网 <a href='https://www.py.cn/'>https://www.py.cn/</a></li>
+							<li> <a href='https://www.xp.cn/'>PHPstudy</a></li>
+							<li> <a href='https://www.html.cn/'>html中文网</a></li>
+							<li> <a href='https://www.php.cn/'>PHP中文网</a></li>
+							<li> <a href='https://www.py.cn/'>PyThon学习网</a></li>
 
 						</ul>
 					</li>
@@ -259,6 +277,13 @@
 					<li> <a href='https://www.8ziyuan.com/'>8资源分享</a></li>
 					<li><a href="https://www.gugeys.cc/">谷哥论坛</a></li>
 					<li><a href="https://bbs.popgo.org/bbs/">漫游</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>手机端</p>
+				<ul>
+					<li><a href="http://nmtv.cc/">NemoAPP</a></li>
+					<li><a href="http://www.fbdhqh.cn/">Girls美剧小站公众号</a></li>
 				</ul>
 			</li>
 			<li>
@@ -414,13 +439,20 @@
 					<li>7z</li>
 				</ul>
 			</li>
-			<li>搜索 everything</li>
+			<li>
+				<p>搜索</p>
+				<ul>
+					<li><a href="https://www.listary.com/">Listary</a></li>
+					<li><a href="https://www.voidtools.com/zh-cn/">everything</a></li>
+				</ul>
+			</li>
 		</ul>
 
 		<p id="browser">浏览器扩展</p>
 		<ul>
 			<li><a href='https://adguard.com/zh_cn/welcome.html '>AdGuard广告拦截</a></li>
-
+			<li><a href="http://www.pullywood.com/ImageAssistant/">图片助手</a></li>
+			<li><a href="http://googlehelper.net/">谷歌上网助手|1.4.3在蓝奏云</a></li>
 		</ul>
 
 		<p id="soft">软件</p>
@@ -556,10 +588,11 @@
 			<li>
 				<p>主题美化</p>
 				<ul>
-					<li>致美化 <a href='https://zhutix.com/'>https://zhutix.com/</a></li>
-					<li>upupoo <a href='http://www.upupoo.com/'>http://www.upupoo.com/</a></li>
+					<li><a href="https://www.upupoo.com/">啊噗啊噗</a></li>
+					<li> <a href='https://zhutix.com/'>致美化</a></li>
 					<li>雨滴</li>
-					<li>主题破解 <a href='https://www.syssel.net/hoefs/index.php?lang=en'>https://www.syssel.net/hoefs/index.php?lang=en</a></li>
+					<li> <a href="https://www.syssel.net/hoefs/index.php?lang=en">主题破解</a></li>
+					<li><a href="https://github.com/TranslucentTB/TranslucentTB/releases">TranslucentTB</a></li>
 
 				</ul>
 			</li>
@@ -576,7 +609,6 @@
 
 		</ul>
 
-
 		<p id="yuancheng">远程</p>
 		<ul>
 			<li>遥控 HiPC <a href='https://hipc.cn/'>https://hipc.cn/</a></li>
@@ -590,7 +622,7 @@
 			<li>
 				<a href='https://github.com/dxxzst'>dxxzst的GitHub</a>
 			</li>
-
+			<li><a href="https://github.com/freessservice">蜂鸟VPN</a></li>
 			<li><a href='https://github.com/getlantern/download'>蓝灯</a></li>
 			<li>
 				<p>小飞机 <a href='https://www.lanzous.com/i6r7o3c'>蓝奏云</a></p>
@@ -604,13 +636,19 @@
 
 		<p id="guide">网址导航</p>
 		<ul>
-			<li>某柠檬 <a href='https://www.moulem.com/'>https://www.moulem.com/</a></li>
-			<li>沃客导航 <a href='https://www.9178.work/'>https://www.9178.work/</a></li>
-			<li>龙轩导航 <a href='http://ilxdh.com/'>http://ilxdh.com/</a></li>
-			<li>AnywhereAnything <a href='http://lackar.com/aa/'>http://lackar.com/aa/</a></li>
-			<li>收库123 <a href='https://shouku123.com/https://shouku123.com/xizi'>https://shouku123.com/https://shouku123.com/xizi</a></li>
-			<li>看国外 <a href='https://www.kanguowai.com/'>https://www.kanguowai.com/</a></li>
-
+			<li><a href="https://nav.wsoso.com/">蓝点网址导航</a></li>
+			<li> <a href='https://www.moulem.com/'>某柠檬</a></li>
+			<li> <a href='https://www.9178.work/'>沃客导航</a></li>
+			<li> <a href='http://ilxdh.com/'>龙轩导航</a></li>
+			<li> <a href='http://lackar.com/aa/'>AnywhereAnything</a></li>
+			<li>
+				<p>收库123</p>
+				<ul>
+					<li><a href="https://shouku123.com/">收库123</a></li>
+					<li><a href="https://shouku123.com/xizi">xizi</a></li>
+				</ul>
+			</li>
+			<li> <a href='https://www.kanguowai.com/'>看国外</a></li>
 		</ul>
 
 

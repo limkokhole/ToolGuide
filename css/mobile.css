@@ -31,9 +31,12 @@ body,p {
 	margin: 0.3125rem;
 }
 
+#search{
+	margin-top: 1rem;
+}
 #search div {
-	width: 31.25rem;
-	margin: 0rem 0rem 0rem auto;
+	width: 90%;
+	margin: 0rem auto;
 }
 
 #search-input {
@@ -52,15 +55,15 @@ body,p {
 	font-size: 1rem;
 	font-family: arial;
 	line-height: 1.375rem;
-	width: 30rem;
+	width: 96%;
 }
 
 .search-btn {
-	margin: 1rem;
+	margin: 1%;
 	margin-left: 0rem;
 	padding: 0rem;
 	cursor: pointer;
-	width: 2.625rem;
+	width: 10%;
 	line-height: 1rem;
 	font-size: 0.625rem;
 }

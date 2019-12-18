@@ -1,7 +1,7 @@
 $(function() {
 	$(".search-btn").click(function(){
 		var url="searchResult.html?q="+$("#search-kw").val()+"&s="+$(this).attr("id");
-		window.open(url);
+		location.href=url;
 	})
 	$("#search").keydown(function(){
 		if(event.keyCode==13)
