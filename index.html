@@ -4,31 +4,35 @@
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width initial-scale=1'>
 		<title>网址导航</title>
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<script src="js/jQuery2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			function browserRedirect() {  
-					var sUserAgent = navigator.userAgent.toLowerCase();  
-					var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";  
-					var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
-					var bIsMidp = sUserAgent.match(/midp/i) == "midp";  
-					var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  
-					var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";  
-					var bIsAndroid = sUserAgent.match(/android/i) == "android";  
-					var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
-					var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-					if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) { 
+			function browserRedirect() {
+				var sUserAgent = navigator.userAgent.toLowerCase();
+				var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+				var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+				var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+				var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+				var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+				var bIsAndroid = sUserAgent.match(/android/i) == "android";
+				var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+				var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+				if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+					document.write('<link rel="stylesheet" type="text/css" href="css/mobile.css"/>');
 					document.write('<script type="text/javascript" charset="utf-8" src="js/mobile.js"><\/script>');
-					} else {  
+				} else {
+					document.write('<link rel="stylesheet" type="text/css" href="css/index.css" />');
 					document.write('<script type="text/javascript" charset="utf-8" src="js/index.js"><\/script>');
-					}  
-					}
-					browserRedirect();  
+				}
+			}
+			browserRedirect();
 		</script>
+		
+		
 	</head>
 	<body>
 		<div id="top">
 			<a href="https://greenboy0526.github.io/">我的主页</a>
+			<a href="https://greenboy0526.gitee.io/video/">视频</a>
 		</div>
 
 		<div id="search">
@@ -49,7 +53,7 @@
 
 		<div id="menu">
 			<div id="list_logo">
-					亖
+				亖
 			</div>
 			<ul id="list">
 				<li><a href="#top">TOP</a></li>
@@ -121,6 +125,7 @@
 		<p id="niubi">牛逼的小站</p>
 		<ul>
 			<li> <a href='http://www.yinwang.org/#'>当然我在扯淡|王垠</a></li>
+			<li><a href="https://yinwang0.wordpress.com/">Surely I Am Joking|王垠</a></li>
 			<li> <a href='http://www.wangchao.info/'>王超博客</a></li>
 			<li> <a href='https://www.tlanyan.me/'>tlanyan</a></li>
 			<li> <a href='https://www.ffeeii.com/'>飞哥专栏</a></li>
@@ -141,7 +146,7 @@
 			<li> <a href='https://shuax.com/'>耍下</a></li>
 			<li> <a href='https://www.wuzuowei.net/'>无作为</a></li>
 			<li> <a href='http://www.jianyiit.com/'>简易工作室|专注AutoIT(Au3)</a></li>
-
+			<li><a href="https://liaoren.net/">聊仁小窝</a></li>
 		</ul>
 
 
@@ -238,6 +243,7 @@
 					<li><a href="http://www.btmeiju.com/">bt美剧</a></li>
 					<li><a href="http://www.zmz2019.com/">人人影视</a></li><!-- rrys.tv -->
 					<li><a href="https://www.poxiao.com/">破晓电影</a></li>
+					<li><a href="http://pianyuan.la/">片源网</a></li>
 				</ul>
 			</li>
 			<li>
@@ -277,6 +283,7 @@
 					<li> <a href='https://www.8ziyuan.com/'>8资源分享</a></li>
 					<li><a href="https://www.gugeys.cc/">谷哥论坛</a></li>
 					<li><a href="https://bbs.popgo.org/bbs/">漫游</a></li>
+					<li><a href="https://shinybbs.vip/">深影论坛</a></li>
 				</ul>
 			</li>
 			<li>
@@ -341,8 +348,8 @@
 			<li>
 				<p>百度网盘下载加速</p>
 				<ul>
-					<li>PanDownload <a href='https://www.baiduwp.com/'>https://www.baiduwp.com/</a></li>
-					<li>直链在线解析 <a href='https://www.baidusu.com/'>https://www.baidusu.com/</a></li>
+					<li> <a href='https://www.baiduwp.com/'>PanDownload</a></li>
+					<li> <a href='https://www.baiduyun.wiki/'>网盘直链下载助手</a></li>
 					<li>爱奇艺万能播放器</li>
 
 				</ul>

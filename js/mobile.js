@@ -1,7 +1,6 @@
 $(function() {
 	$("#search").wrap("<form></form>");
 	$("form").attr('action', 'https://www.baidu.com/s');
-	$("link").attr("href","css/mobile.css");
 	
 	$("#baidu").click(function() {
 		$("form").attr('action', 'https://www.baidu.com/s');
