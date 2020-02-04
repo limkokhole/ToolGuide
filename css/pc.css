@@ -1,16 +1,14 @@
-#search{
-	margin-top: 1rem;
-}
 #search div {
-	width: 90%;
-	margin: 0rem auto;
+	width: 31.25rem;
+	margin: 0rem 0rem 0rem auto;
 }
+
 .search-btn {
-	margin: 1%;
+	margin: 1rem;
 	margin-left: 0rem;
 	padding: 0rem;
 	cursor: pointer;
-	width: 10%;
+	width: 2.625rem;
 	line-height: 1rem;
 	font-size: 0.625rem;
 }

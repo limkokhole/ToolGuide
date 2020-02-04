@@ -4,6 +4,8 @@
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width initial-scale=1'>
 		<title>网址导航</title>
+		<link rel="shortcut icon" href="img/logo.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/jQuery2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			function browserRedirect() {
@@ -20,7 +22,7 @@
 					document.write('<link rel="stylesheet" type="text/css" href="css/mobile.css"/>');
 					document.write('<script type="text/javascript" charset="utf-8" src="js/mobile.js"><\/script>');
 				} else {
-					document.write('<link rel="stylesheet" type="text/css" href="css/index.css" />');
+					document.write('<link rel="stylesheet" type="text/css" href="css/pc.css" />');
 					document.write('<script type="text/javascript" charset="utf-8" src="js/index.js"><\/script>');
 				}
 			}
@@ -52,9 +54,7 @@
 		</div>
 
 		<div id="menu">
-			<div id="list_logo">
-				亖
-			</div>
+			<img src="img/menu.png" id="list_logo">
 			<ul id="list">
 				<li><a href="#top">TOP</a></li>
 				<li><a href="#zixunluntan">资讯论坛</a></li>

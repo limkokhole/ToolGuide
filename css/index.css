@@ -1,39 +1,25 @@
 body,p {
 	margin: 0rem;
 }
-
-#list_logo {
+#list_logo{
+	position: fixed;
+	right: 1rem;
+	bottom: 8rem;
+	width: 2.25rem;
+}
+#list {
 	position: fixed;
 	right: 0rem;
 	bottom: 8rem;
-	background: gray;
-	width: 2.5rem;
-	line-height: 2.5rem;
-	border-radius: 1.25rem;
-	text-align: center;
-	color: white;
-	font-family: "arial black";
-	font-weight: bolder;
-	font-size: 1.5rem;
-}
-#list {
 	margin: 0rem;
 	padding: 0rem;
 	background: whitesmoke;
 	width: 8rem;
-	position: fixed;
-	right: 0rem;
-	bottom: 8rem;
 	display: none;
 }
 
 #list li {
 	margin: 0.3125rem;
-}
-
-#search div {
-	width: 31.25rem;
-	margin: 0rem 0rem 0rem auto;
 }
 
 #search-input {
@@ -52,17 +38,7 @@ body,p {
 	font-size: 1rem;
 	font-family: arial;
 	line-height: 1.375rem;
-	width: 30rem;
-}
-
-.search-btn {
-	margin: 1rem;
-	margin-left: 0rem;
-	padding: 0rem;
-	cursor: pointer;
-	width: 2.625rem;
-	line-height: 1rem;
-	font-size: 0.625rem;
+	width: 96%;
 }
 
 body>p {

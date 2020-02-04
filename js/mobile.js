@@ -39,8 +39,8 @@ $(function() {
 		$("form").submit();
 	});
 	$("#douban").click(function() {
-		$("form").attr('action', 'https://www.douban.com/search');
-		$("#search-kw").attr('name', 'q');
+		$("form").attr('action', 'https://m.douban.com/search');
+		$("#search-kw").attr('name', 'query');
 		$("form").submit();
 	});
 	
