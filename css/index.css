@@ -1,5 +1,12 @@
-body,p {
+body,p,ul{
 	margin: 0rem;
+}
+#top ul{
+	padding-left: 0rem;
+}
+#top ul li{
+	margin-top: 0rem;
+	padding: 0rem;
 }
 #list_logo{
 	position: fixed;

@@ -67,9 +67,13 @@ $(function() {
 		$("form").submit();
 	});
 	$("#douban").click(function() {
+		$("iframe").css("display","none");
+		$("#yitiaozhuan").css("display","block");
 		$("form").attr('action', 'https://www.douban.com/search');
 		$("#search-kw").attr('name', 'q');
+		$("form").attr("target", "_blank");
 		$("form").submit();
+		$("form").attr("target", "kuangjia");
 	});
 	$("#header").keydown(function() {
 		if (event.keyCode == 13)
